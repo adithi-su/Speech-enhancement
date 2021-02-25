@@ -1,0 +1,3 @@
+An introduction to signal processing for speech
+--------------------------------------------------------------------------------
+Insights from https://www.ee.columbia.edu/~dpwe/pubs/Ellis10-introspeech.pdf

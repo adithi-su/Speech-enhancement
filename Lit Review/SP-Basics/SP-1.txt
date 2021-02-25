@@ -1,0 +1,62 @@
+Insights from https://towardsdatascience.com/beginners-guide-to-speech-analysis-4690ca7a7c05
+
+-A 16 bit signal at a sampling frequency of 16 kHz means there are 16000 samples
+for each second of the signal and each sample has a resolution of 16 bits per
+sample.
+
+-Sampling frequency of an audio signal determines the resolution of the audio
+samples, higher the sampling rate, higher is the resolution of the signal.
+
+-Speech is basically a sequence of articulate sound units like ‘w’, ‘ih’ known
+as phonemes. It can be segmented into a sequence of phonemes and
+silence/ non-speech segments.
+
+  Phonemes ‘w’, ‘ih’ and ‘l’ are quasi-periodic (irregular period) in nature,
+and are categorised as voiced phonemes as they are produced by periodic
+vibration of vocal folds.
+‘ih’ is a vowel while ‘w’ and ‘l’ are semi-vowels.
+Phonemes ‘g’ and ‘t’ are further categorised as stops which is silence followed
+by a sudden impulse.
+
+  Voiced and unvoiced classes are the broad categorisation of speech sounds based
+on the vibration of vocal cords.
+    - voiced component is quasi periodic
+    - unvoiced components are noisy as they are not produced by periodic vibration
+      of vocal folds.
+
+- Phoneme to grapheme mapping (phonetic sequence <-> text)
+Text: “will we ever forget it”
+Phonetic sequence: ‘w’, ‘ih’, ‘l’, ‘w’, ‘iy’, ‘eh’, ‘v’, ‘er’, ‘f’, ‘er’, ‘g’, ‘eh’, ‘t’, ‘ih’, ‘t’
+
+-review STFT, Spectogram in article
+
+   Tradeoff between resolution in time and frequency domain.
+Taking a very small frame size will give a higher resolution in time but will
+give few samples in a single frame and the corresponding Fourier components will
+have few frequency components. And taking a larger frame size will give lower
+time resolution but higher frequency resolution due to higher number of samples.
+So, getting a high resolution both in time and frequency simultaneously is not possible.
+
+- Applications of speech analysis:
+voice activity detection
+Speech enhancement: Improving the quality of speech signal by filtering and separating the noise from the speech segments
+Speech recognition
+Text to Speech
+Speaker diarization and speaker recognition
+Audio source separation
+Speech modification
+Emotional speech classification
+Keyword spotting
+
+- Challenge : external factors like noise. Various signal processing, neuroscience
+based methods, supervised and unsupervised machine learning techniques are explored
+to solve the same.
+Due to the unstructured nature of speech signals, deep learning based methods have
+shown success for various applications.
+
+- noise:unwanted signal distorting the original signal
+Given a speech signal with amplitude s[n], where n is the sample index, noise is
+any other signal, w[n] which interferes with the speech. The noisy speech signal u[n] can be seen as:
+u[n]=s[n] + w[n] (additive noise)
+Other forms - convolutional form such as reverberation, amplitude clipping and
+other non-linear distortions of the speech signal.
