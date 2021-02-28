@@ -1,0 +1,11 @@
+Project meet 1
+
+Do Lit survey on (1-2 weeks):
+1. Fundamentals of Speech
+2. Speech enhancement- Wiener filters, wavenets?
+3. Drawbacks in classical methods, how to overcome using DL?
+4. Applications
+
+
+next era -> NLP - Speech enhancement for Speech Recognition systems (selected project)
+                - Speech<->Text :speech synthesis

@@ -1,0 +1,8 @@
+Project Meet 2
+
+Progress update discussion
+Implement Hidden Markov Model using Libre Speech dataset + analyze
+Kaldi toolkit to be used
+Watch ASR video lectures by Samudra Vijay
+Watch ASR video by KP Jyoti
+Go through research paper and link shared 
