@@ -1,4 +1,4 @@
-# Speech-enhancement for speech recognition systems
+# Speech-enhancement for robust automatic speech recognition
 
 Mini-project (4th semester) 
 
